@@ -1,0 +1,36 @@
+:root {
+    --vx-bg: #fffefe;
+    --vx-th1: #6610f2;
+    --vx-th2: #6f42c1;
+    --vx-th3: #8669b7;
+    --vx-tdefault: #444444;
+
+    --vx-font-sans: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --vx-font-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --vx-gradientType: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+}
+
+body{
+    background-color: var(--vx-bg);
+    color: var(--vx-tdefault);
+    font-family: var(--vx-font-mono);
+    size: 16px;
+}
+
+
+h1{
+    color: var(--vx-th1);
+    size: 1.5rem;
+}
+h2{
+    color: var(--vx-th2);
+    size: 1.2rem;
+}
+h3{
+    color: var(--vx-th3);
+    size: 1.125rem;
+}
+
+p{
+
+}

@@ -1,0 +1,63 @@
+:root {
+    --main-bg-color: #333333;
+    --main-text-color: #eeeeee;
+    --sub-text: #aaaaaa;
+    --link-color: #dddddd;
+    --link-hover-color: #00ff00;
+}
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px;
+    font-size: 14px;
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+.text-muted {
+    color: var(--sub-text) !important;
+}
+
+.console-lvl0 {
+    font-weight: lighter;
+    font-style: italic;
+    color: #5e86ff;
+}
+.console-lvl1 {
+    font-weight: bold;
+    color: #8faaff;
+}
+.console-tb {
+    font-weight: bold;
+}
+
+.console-branch {
+    font-weight: bold;
+    color: #00ff00;
+}
+.console-unknown {
+    font-weight: lighter;
+    color: #ffcf90;
+}
+.console-end {
+
+}
+@keyframes blink {
+    50% {
+        opacity: 0.0;
+    }
+}
+.typing::after {
+    content: '|';
+    color: lime;
+    animation: blink 1s steps(5, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+}

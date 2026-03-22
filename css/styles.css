@@ -507,6 +507,9 @@ section:last-child {
     opacity: 0;
     pointer-events: none;
     transition: transform 0.32s ease, opacity 0.22s ease;
+
+    height: 100dvh;
+    overflow: hidden;
   }
 
   .mobile-menu.is-open {
@@ -516,9 +519,10 @@ section:last-child {
   }
 
   .mobile-menu-inner {
-    min-height: 100vh;
-    padding: 18px 18px 32px;
+    height: 100%;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 18px 18px 32px;
   }
 
   .mobile-menu-top {
